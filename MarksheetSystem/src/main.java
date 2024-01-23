@@ -23,6 +23,7 @@ public class main {
                 Type --> 8 <-- to an entry from the student table\s
                 Type --> 9 <-- to insert an entry into to the marksheet table\s
                 Type --> 10 <-- to delete an entry from the marksheet table\s
+                Type --> 11 <-- to delete an entry from the marksheet table\s
                 """);
 
         Scanner sc = new Scanner(System.in);
@@ -44,6 +45,7 @@ public class main {
                 case "8" -> st.deleteData();//works
                 case "9" -> mks.insertDatamks();//works
                 case "10" -> mks.deleteDatamks();//works
+                case "11" -> mks.getIndividualMarksheet();
                 default -> System.out.println("Invalid input. Please enter a valid option.");
             }
         } while (!input.equals("exit"));
